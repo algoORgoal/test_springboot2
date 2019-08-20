@@ -8,10 +8,17 @@
 </head>
 
 <body>
-    <div>edit</div>
+    <!-- <div>edit</div>
     <a href="./list_example.html" th:href="@{/commonCode/list}">list</a>
     <a href="./read_example.html" th:href="@{/commonCode/read}">read</a>
     <a href="./edit_example.html" th:href="@{/commonCode/edit}">edit</a>
+ -->
+
+    <form th:action="@{/commonCode/read}">
+        <input type="text" placholder="name" name="name">
+        <input type="password" name="password">
+        <button type="submit"></button>
+    </form>
 </body>
 
 </html>

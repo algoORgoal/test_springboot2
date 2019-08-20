@@ -15,13 +15,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <script>
+        $.get()
+    </script>
 </head>
 
 <body>
     <div class="container">
-        <form action="./index.html" th:href="@{/index}">
+        <form action="./read" th:action="@{/organization/read}">
             <div class="text-center display-1 m-5">Sign up</div>
-
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text">ID</span>
@@ -36,12 +39,26 @@
                 <input type="password" class="form-control" placeholder="Password">
             </div>
 
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Name</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Name">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Hobby</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Hobby">
+            </div>
+
+
             <div class="text-center">
                 <button type="submit" class="btn btn-primary">Submit</button>
-                <a href="./index.html" th:href="@{/index}"><button class="btn btn-success">Go home</button></a>
+                <a href="#" th:href="@{/organization/insert}"><button class="btn btn-success">Go home</button></a>
             </div>
         </form>
-
     </div>
 </body>
 

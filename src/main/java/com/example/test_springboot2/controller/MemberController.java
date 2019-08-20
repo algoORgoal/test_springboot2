@@ -30,4 +30,12 @@ public class MemberController {
         return "index";
     }
 
+    @RequestMapping(value = "/organization/insert")
+    public void insert() {
+    }
+
+    @RequestMapping(value = "/commonCode/read")
+    public void read() {
+    }
+
 }

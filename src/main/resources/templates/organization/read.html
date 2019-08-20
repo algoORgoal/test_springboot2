@@ -19,29 +19,7 @@
 
 <body>
     <div class="container">
-        <form action="./index.html" th:href="@{/index}">
-            <div class="text-center display-1 m-5">Sign up</div>
-
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">ID</span>
-                </div>
-                <input type="email" class="form-control" placeholder="E-mail">
-            </div>
-
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">PW</span>
-                </div>
-                <input type="password" class="form-control" placeholder="Password">
-            </div>
-
-            <div class="text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
-                <a href="./index.html" th:href="@{/index}"><button class="btn btn-success">Go home</button></a>
-            </div>
-        </form>
-
+        <span th:text="${paramMap.ORGANIZATION_SEQ}"></span>
     </div>
 </body>
 

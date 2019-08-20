@@ -3,15 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script>
+    </script>
 </head>
 
 <body>
-    <div>read</div>
-    <a href="./list_example.html" th:href="@{/commonCode/list}">list</a>
+    <!-- <div>read</div> -->
+    <!-- <a href="./list_example.html" th:href="@{/commonCode/list}">list</a>
     <a href="./read_example.html" th:href="@{/commonCode/read}">read</a>
-    <a href="./edit_example.html" th:href="@{/commonCode/edit}">edit</a>
+    <a href="./edit_example.html" th:href="@{/edit}">edit</a> -->
+    <span th:text="${resultMap.name}"></span>
+    <!--<span th:text=${paramMap.DESCRIPTION}></span>-->
 </body>
 
 </html>
