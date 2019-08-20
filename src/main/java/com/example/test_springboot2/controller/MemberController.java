@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MemberController {
     @RequestMapping(value = "/member/list")
     public String list() {
-        return "list";
+        return "member/list";
     }
 
     @RequestMapping(value = "/login")
@@ -29,4 +29,5 @@ public class MemberController {
     public String index() {
         return "index";
     }
+
 }
