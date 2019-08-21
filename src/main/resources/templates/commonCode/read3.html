@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="https://thymeleaf.org">
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <!--bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -17,12 +18,17 @@
 </head>
 
 <body>
-    <!-- <div>read</div> -->
-    <!-- <a href="./list_example.html" th:href="@{/commonCode/list}">list</a>
-    <a href="./read_example.html" th:href="@{/commonCode/read}">read</a>
-    <a href="./edit_example.html" th:href="@{/edit}">edit</a> -->
-    <span th:text="${resultMap.NAME}"></span>
-    <!--<span th:text=${paramMap.DESCRIPTION}></span>-->
+    <div class="container">
+        <table class="table">
+            <tbody>
+                <tr th:each="resultData: ${resultList}">
+                    <td th:text="${resultData.NAME}"></td>
+                    <td th:text="${resultData.COMMON_CODE_ID}"></td>
+                    <td th:text="${resultData.DESCRIPTION}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 
 </html>

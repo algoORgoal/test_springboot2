@@ -33,9 +33,7 @@ public class MemberController {
     @RequestMapping(value = "/organization/insert")
     public void insert() {
     }
-
-    @RequestMapping(value = "/commonCode/read")
-    public void read() {
-    }
-
+    /*
+     * @RequestMapping(value = "/commonCode/read") public void read() { }
+     */
 }

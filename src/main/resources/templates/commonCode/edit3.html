@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <!--bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -14,15 +15,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <!-- <div>read</div> -->
-    <!-- <a href="./list_example.html" th:href="@{/commonCode/list}">list</a>
-    <a href="./read_example.html" th:href="@{/commonCode/read}">read</a>
-    <a href="./edit_example.html" th:href="@{/edit}">edit</a> -->
-    <span th:text="${resultMap.NAME}"></span>
-    <!--<span th:text=${paramMap.DESCRIPTION}></span>-->
+    <form th:action="@{/commonCode/read3}">
+        <input type="text" placholder="name" name="NAME">
+        <input type="text" placeholder="id" name="COMMON_CODE_ID">
+        <input type="text" placeholder="description..." name="DESCRIPTION">
+        <button type="submit">submit</button>
+    </form>
 </body>
 
 </html>
