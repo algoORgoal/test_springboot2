@@ -16,7 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class ReferenceController {
     @RequestMapping(value = "/commonCode/edit4")
-    public void edit3_name() {
+    public void edit4_name() {
 
     }
 
