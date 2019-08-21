@@ -1,3 +1,5 @@
+<!--incomplete-->
+
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://thymeleaf.org">
 
@@ -20,11 +22,13 @@
 
 <body>
     <form th:action="@{/commonCode/read3}">
-        <input type="text" placholder="name" name="NAME">
-        <input type="text" placeholder="id" name="COMMON_CODE_ID">
-        <input type="text" placeholder="description..." name="DESCRIPTION">
+        <div type="text" name="NAME"></div>
+        <div type="text" name="COMMON_CODE_ID"></div>
+        <div type="text" name="DESCRIPTION"></div>
+        <input type="text" name="KEYWORD" plceholder="search">
         <button type="submit">submit</button>
     </form>
+
 </body>
 
 </html>

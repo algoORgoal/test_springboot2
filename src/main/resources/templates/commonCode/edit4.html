@@ -1,5 +1,7 @@
+<!--incomplete-->
+
 <!DOCTYPE html>
-<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<html lang="en" xmlns:th="https://thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -15,18 +17,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <div class="container">
-        <table class="table">
-            <tbody>
-                <tr th:each="resultData: ${resultList}">
-                    <td th:text="${resultData.KEYWORD}"></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <form th:action="@{/commonCode/read4}">
+        <input type="text" name="MEMBER_ID"></div>
+        <input type="text" name="NAME"></div>
+        <button type="submit">submit</button>
+    </form>
+
 </body>
 
 </html>
