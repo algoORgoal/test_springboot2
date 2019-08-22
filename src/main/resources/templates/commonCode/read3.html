@@ -22,7 +22,9 @@
         <table class="table">
             <tbody>
                 <tr th:each="resultData: ${resultList}">
-                    <td th:text="${resultData.KEYWORD}"></td>
+                    <td th:text="${resultData.NAME}"></td>
+                    <td th:text="${resultData.COMMON_CODE_ID}"></td>
+                    <td th:text="${resultData.DESCRIPTION}"></td>
                 </tr>
             </tbody>
         </table>

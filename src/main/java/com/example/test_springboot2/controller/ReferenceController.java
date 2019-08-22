@@ -3,7 +3,7 @@ package com.example.test_springboot2.controller;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.example.test_springboot2.service.MemberService;
+import com.example.test_springboot2.service.MemberService2;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,7 +21,7 @@ public class ReferenceController {
     }
 
     @Autowired
-    private MemberService service;
+    private MemberService2 service;
 
     @RequestMapping(value = "/{action}", method = RequestMethod.GET)
     public ModelAndView actionMethod(@RequestParam Map<String, Object> paramMap, @PathVariable String action,
