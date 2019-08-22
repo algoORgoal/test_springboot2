@@ -1,6 +1,6 @@
 package com.example.test_springboot2.service;
 
-import com.example.test_springboot2.repository.MemberDao;
+import com.example.test_springboot2.dao.MemberDao;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

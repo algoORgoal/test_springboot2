@@ -23,7 +23,7 @@ public class CommonCodeController3 {
     @RequestMapping(value = "/{action}", method = RequestMethod.GET)
     public ModelAndView edit3(@RequestParam Map<String, Object> paramMap, @PathVariable String action,
             ModelAndView modelandView) {
-        String keyword = String.valueOf(paramMap.get("KEYWORD"));
+        String keyword = (String) paramMap.get("KEYWORD");
         String viewName = "commonCode/";
         List<Object> resultList = new ArrayList<Object>();
 
@@ -43,11 +43,12 @@ public class CommonCodeController3 {
             emptyMap.put("COMMON_CODE_ID", "CAN'T BE FOUND");
             emptyMap.put("DESCRIPTION", "CAN'T BE FOUND");
             for (String key : dataMap.keySet()) {
-                if (keyword == dataMap.get(key)) {
+                if (keyword.equals(dataMap.get(key))) {
                     resultMap.put("KEYWORD", dataMap.get(key));
                     hasKeyword = true;
                 }
             }
+
             if (hasKeyword == true) {
                 resultList.add(dataMap);
             } else {
